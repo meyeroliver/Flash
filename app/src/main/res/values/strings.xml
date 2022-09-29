@@ -2,8 +2,8 @@
     <string name="app_name">Flash</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="wallet_fragment_label">Wallet</string>
+    <string name="transact_fragment_label">Transact</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 

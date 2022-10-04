@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.flash.databinding.FragmentFirstBinding
 
 /**
@@ -14,6 +15,7 @@ import com.example.flash.databinding.FragmentFirstBinding
 class FirstFragment : Fragment() {
 
     private var _binding: FragmentFirstBinding? = null
+    private lateinit var currencyAdaptor: CurrencyRecyclerViewAdaptor
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -25,6 +27,8 @@ class FirstFragment : Fragment() {
     ): View? {
 
         _binding = FragmentFirstBinding.inflate(inflater, container, false)
+        initRecyclerView()
+        addDataSet()    
         return binding.root
 
     }
@@ -35,6 +39,19 @@ class FirstFragment : Fragment() {
         binding.buttonFirst.setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
+    }
+
+    private fun initRecyclerView(){
+        binding.recyclerView.apply {
+            layoutManager = LinearLayoutManager(this.context)
+            currencyAdaptor = CurrencyRecyclerViewAdaptor()
+            adapter = currencyAdaptor
+        }
+    }
+
+    private fun addDataSet(){
+        val data = DataSource.createDataSet()
+        currencyAdaptor.setList(data)
     }
 
     override fun onDestroyView() {

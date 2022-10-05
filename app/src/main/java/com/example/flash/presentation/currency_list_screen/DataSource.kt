@@ -1,6 +1,6 @@
-package com.example.flash
+package com.example.flash.presentation.currency_list_screen
 
-import com.example.flash.models.Currency
+import com.example.flash.domain.models.Currency
 
 class DataSource {
 

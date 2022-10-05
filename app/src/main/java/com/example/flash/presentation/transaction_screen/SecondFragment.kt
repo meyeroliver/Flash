@@ -1,4 +1,4 @@
-package com.example.flash
+package com.example.flash.presentation.transaction_screen
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.example.flash.R
 import com.example.flash.databinding.FragmentSecondBinding
 
 /**

@@ -1,11 +1,12 @@
-package com.example.flash
+package com.example.flash.presentation.currency_list_screen
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.flash.models.Currency
+import com.example.flash.R
+import com.example.flash.domain.models.Currency
 
 class CurrencyRecyclerViewAdaptor : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 

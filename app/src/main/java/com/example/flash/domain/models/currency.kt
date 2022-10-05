@@ -1,4 +1,4 @@
-package com.example.flash.models
+package com.example.flash.domain.models
 
 data class Currency(
     var value: Double,

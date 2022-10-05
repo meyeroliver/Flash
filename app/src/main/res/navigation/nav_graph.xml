@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.flash.FirstFragment"
+        android:name="com.example.flash.presentation.currency_list_screen.FirstFragment"
         android:label="@string/wallet_fragment_label"
         tools:layout="@layout/fragment_first">
 
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.example.flash.SecondFragment"
+        android:name="com.example.flash.presentation.transaction_screen.SecondFragment"
         android:label="@string/transact_fragment_label"
         tools:layout="@layout/fragment_second">
 

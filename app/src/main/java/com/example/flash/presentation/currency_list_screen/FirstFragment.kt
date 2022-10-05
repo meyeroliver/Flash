@@ -1,4 +1,4 @@
-package com.example.flash
+package com.example.flash.presentation.currency_list_screen
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.flash.R
 import com.example.flash.databinding.FragmentFirstBinding
+
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -16,6 +18,7 @@ class FirstFragment : Fragment() {
 
     private var _binding: FragmentFirstBinding? = null
     private lateinit var currencyAdaptor: CurrencyRecyclerViewAdaptor
+   private lateinit var currencyListViewModel: CurrencyListViewModel
 
     // This property is only valid between onCreateView and
     // onDestroyView.
